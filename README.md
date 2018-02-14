@@ -6,7 +6,7 @@
 
 ## Requirements
 
-- Node.js v8.x LTS (Carbon)
+- Node.js v8.x LTS (Carbon) or Electron 1.7.x
 
 ## Installation
 
