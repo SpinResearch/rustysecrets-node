@@ -1,0 +1,19 @@
+[package]
+name = "rustysecrets-node"
+version = "0.1.0"
+authors = ["Romain Ruetschi <romain.ruetschi@gmail.com>"]
+license = "MIT"
+build = "build.rs"
+
+[lib]
+name = "rustysecrets_node"
+crate-type = ["dylib"]
+
+[build-dependencies]
+neon-build = "0.1.22"
+
+[dependencies]
+neon = "^0.1.22"
+base64 = "^0.9.0"
+protobuf = "^1.4.0"
+rusty_secrets = "^0.1.0"

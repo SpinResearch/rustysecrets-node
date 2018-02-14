@@ -1,0 +1,44 @@
+{
+  "name": "rusty-secrets",
+  "version": "0.1.0",
+  "description": "Node.js bindings to RustySecrets, a secret sharing scheme implementation in Rust.",
+  "keywords": [
+    "shamir",
+    "secret sharing",
+    "threshold",
+    "secret splitting",
+    "rust"
+  ],
+  "author": "Romain Ruetschi <romain.ruetschi@gmail.com>",
+  "contributors": [
+    "Frederic Jacobs <github@fredericjacobs.com>"
+  ],
+  "license": "BSD-3-Clause",
+  "homepage": "https://github.com/SpinResearch/rustysecrets-node",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SpinResearch/rustysecrets-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SpinResearch/rustysecrets-node/issues"
+  },
+  "os": [
+    "darwin",
+    "linux"
+  ],
+  "cpu": [
+    "x64"
+  ],
+  "main": "lib/index.js",
+  "dependencies": {
+    "neon-cli": "^0.1.22"
+  },
+  "scripts": {
+    "test": "mocha test/**/*.js",
+    "prepublishOnly": "npm test"
+  },
+  "devDependencies": {
+    "mocha": "^5.0.0",
+    "string-format": "^0.5.0"
+  }
+}
