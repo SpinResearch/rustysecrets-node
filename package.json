@@ -34,6 +34,7 @@
     "neon-cli": "^0.1.22"
   },
   "scripts": {
+    "install": "neon build",
     "test": "mocha test/**/*.js",
     "prepublishOnly": "npm test"
   },
