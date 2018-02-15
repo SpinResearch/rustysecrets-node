@@ -53,8 +53,6 @@ var recovered = rustysecrets.recoverSecret(someShares);
     * [.wrapped](#rustysecrets.wrapped) : <code>object</code>
         * [.splitSecret(k, n, secret, mimeType, signShares, cb)](#rustysecrets.wrapped.splitSecret)
         * [.recoverSecret(shares, verifySignatures, cb)](#rustysecrets.wrapped.recoverSecret)
-    * [.generate_shares()](#rustysecrets.generate_shares)
-    * [.recover_secret()](#rustysecrets.recover_secret)
 
 <a name="rustysecrets.sss"></a>
 
@@ -149,19 +147,6 @@ At least `k` distinct shares need to be provided to recover the secret.
 | shares | <code>Array.&lt;String&gt;</code> | The shares to recover the secret from. |
 | verifySignatures | <code>Boolean</code> | Verify the signatures.  Must be set to `true` if they are signed, `false` otherwise |
 | cb | <code>function</code> | The callback to call with the result. |
-
-<a name="rustysecrets.generate_shares"></a>
-
-### rustysecrets.generate_shares()
-Legacy API: See [splitSecret](#rustysecrets.wrapped.splitSecret).
-
-**Kind**: static method of [<code>rustysecrets</code>](#rustysecrets)
-<a name="rustysecrets.recover_secret"></a>
-
-### rustysecrets.recover_secret()
-Legacy API: See [recoverSecret](#rustysecrets.wrapped.recoverSecret).
-
-**Kind**: static method of [<code>rustysecrets</code>](#rustysecrets)
 
 ## Bug Reporting
 
