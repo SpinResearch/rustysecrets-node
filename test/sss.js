@@ -113,7 +113,7 @@ describe('sss', function() {
 
     assertErr(function(cb) {
       sss.splitSecret(1, 10, secret, false, cb);
-    }, /Threshold is too small/, finalDone);
+    }, /Threshold k must be bigger than or equal to 2/, finalDone);
 
     assertErr(function(cb) {
       sss.splitSecret(1000, 10, secret, false, cb);
@@ -129,7 +129,7 @@ describe('sss', function() {
 
     assertErr(function(cb) {
       sss.splitSecret(7, 2, secret, false, cb);
-    }, /Number of shares is too small/, finalDone);
+    }, /Threshold k must be smaller than or equal to n/, finalDone);
 
     assertErr(function(cb) {
       sss.splitSecret(7, 1000, secret, false, cb);
