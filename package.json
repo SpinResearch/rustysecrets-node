@@ -1,6 +1,6 @@
 {
   "name": "rusty-secrets",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Node.js bindings to RustySecrets, a secret sharing scheme implementation in Rust.",
   "keywords": [
     "shamir",
