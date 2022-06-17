@@ -13,7 +13,7 @@ crate-type = ["dylib"]
 neon-build = "0.1.22"
 
 [dependencies]
-neon = "^0.1.22"
+neon = "^0.10.1"
 base64 = "^0.9.0"
 protobuf = "^1.4.0"
 rusty_secrets = "=0.2.1"
